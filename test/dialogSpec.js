@@ -1,14 +1,14 @@
 
 describe('Given Augmented Presentation Dialog View', () => {
 	it('is defined', () => {
-		expect(Augmented.Presentation.Component.DialogView).to.not.be.undefined;
+		expect(Components.DialogView).to.not.be.undefined;
 	});
 
 	describe('Given an instance of DialogView', () => {
 		let view;
 
 		beforeEach(() => {
-			view = new Augmented.Presentation.Component.DialogView({"name": "sample", "el": "#sandbox"});
+			view = new Components.DialogView({"name": "sample", "el": "#sandbox"});
 		});
 
 		afterEach(() => {
@@ -17,7 +17,7 @@ describe('Given Augmented Presentation Dialog View', () => {
 		});
 
 		it('instance is an instance of DialogView', () => {
-			expect(view instanceof Augmented.Presentation.Component.DialogView).to.be.true;
+			expect(view instanceof Components.DialogView).to.be.true;
 		});
 
 		it('dialog can open', () => {
@@ -37,7 +37,7 @@ describe('Given Augmented Presentation Dialog View', () => {
 		let view;
 
 		beforeEach(() => {
-			view = new Augmented.Presentation.Component.ConfirmationDialogView();
+			view = new Components.ConfirmationDialogView();
 		});
 
 		afterEach(() => {
@@ -46,7 +46,7 @@ describe('Given Augmented Presentation Dialog View', () => {
 		});
 
 		it('instance is an instance of ConfirmationDialogView', () => {
-			expect(view instanceof Augmented.Presentation.Component.ConfirmationDialogView).to.be.true;
+			expect(view instanceof Components.ConfirmationDialogView).to.be.true;
 		});
 
 		it('has buttons', () => {
@@ -58,7 +58,7 @@ describe('Given Augmented Presentation Dialog View', () => {
 		let view;
 
 		beforeEach(() => {
-			view = new Augmented.Presentation.Component.AlertDialogView();
+			view = new Components.AlertDialogView();
 		});
 
 		afterEach(() => {
@@ -67,7 +67,7 @@ describe('Given Augmented Presentation Dialog View', () => {
 		});
 
 		it('instance is an instance of AlertDialogView', () => {
-			expect(view instanceof Augmented.Presentation.Component.AlertDialogView).to.be.true;
+			expect(view instanceof Components.AlertDialogView).to.be.true;
 		});
 
 		it('has alert stlye', () => {

@@ -1,5 +1,4 @@
-
-import Mediator from "../../pubsub/mediator.js";
+import { Mediator } from "presentation-mediator";
 
 /**
  * A Component Manager

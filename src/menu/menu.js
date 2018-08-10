@@ -1,16 +1,5 @@
-/*
-<nav id="more" class="menu tools">
-    <i class="material-icons md-dark">more_vert</i>
-    <ul>
-        <li id="editable" data-viewer="editable" data-click="editableToggle"><i class="material-icons md-dark checkbox hidden"></i><i class="material-icons md-dark">mode_edit</i>Editable Toggle</li>
-        <li id="sorting" data-viewer="sortable" data-click="sortableToggle"><i class="material-icons md-dark checkbox hidden"></i><i class="material-icons md-dark">sort</i>Sorting Toggle</li>
-        <li id="lineNumber" data-viewer="lineNumber" data-click="lineNumbersToggle"><i class="material-icons md-dark checkbox hidden"></i><i class="material-icons md-dark">settings</i>Line Number Toggle</li>
-    </ul>
-</nav>
-*/
-
 import AbstractToolbar from "../toolbar/abstractToolbar.js";
-import Dom from "../../../dom/dom.js";
+import Dom from "presentation-dom";
 import buildNavItems from "../functions/buildNavItems.js";
 
 const buildMenu = (name, menuItems) => {

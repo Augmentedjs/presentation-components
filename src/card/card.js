@@ -1,5 +1,5 @@
-import DecoratorView from "../../decorator/decorator.js";
-import Dom from "../../../dom/dom.js";
+import { DecoratorView } from "presentation-decorator";
+import Dom from "presentation-dom";
 
 /**
  * A card view - simple panel/dialog-like panel

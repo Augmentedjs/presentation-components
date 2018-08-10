@@ -1,6 +1,7 @@
 import Augmented from "augmentedjs-next";
-import DecoratorView from "../../decorator/decorator.js";
-import Model from "../../../model/model.js";
+import Dom from "presentation-dom";
+import Model from "presentation-models";
+import { DecoratorView } from "presentation-decorator";
 
 /**
   * An abstract tooldbar Component, designed to be extended

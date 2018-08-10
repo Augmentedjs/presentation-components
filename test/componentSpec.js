@@ -1,20 +1,20 @@
 describe('Given Components', () => {
 	it('is defined', () => {
-		expect(Augmented.Presentation.Component).to.not.be.undefined;
+		expect(Components).to.not.be.undefined;
 	});
 
 	describe('Given a Header Component', () => {
 		it('is defined', () => {
-			expect(Augmented.Presentation.Component.Header).to.not.be.undefined;
+			expect(Components.Header).to.not.be.undefined;
 		});
 
 		it('can create an instance', () => {
-			const header = new Augmented.Presentation.Component.Header();
+			const header = new Components.Header();
 			expect(header).to.not.be.undefined;
 		});
 
 		it('can create an instance, has title and subTitle', () => {
-			const header = new Augmented.Presentation.Component.Header({
+			const header = new Components.Header({
 				"title": "Hello",
 				"subTitle": "I'm A header"
 			});
@@ -25,11 +25,11 @@ describe('Given Components', () => {
 	});
 
 	it('has a Manager Component defined', () => {
-		expect(Augmented.Presentation.Component.Manager).to.not.be.undefined;
+		expect(Components.Manager).to.not.be.undefined;
 	});
 
 	it('has a Notification Center Component defined', () => {
-		expect(Augmented.Presentation.Component.NotificationCenter).to.not.be.undefined;
+		expect(Components.NotificationCenter).to.not.be.undefined;
 	});
 
 });

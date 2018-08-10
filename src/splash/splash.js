@@ -1,4 +1,4 @@
-import View from "../../view.js";
+import { View } from "presentation-view";
 
 /**
  * Splash Screen View

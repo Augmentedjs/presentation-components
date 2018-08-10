@@ -1,4 +1,4 @@
-import DecoratorView from "../../decorator/decorator.js";
+import { DecoratorView } from "presentation-decorator";
 
 /**
  * A Footer Component

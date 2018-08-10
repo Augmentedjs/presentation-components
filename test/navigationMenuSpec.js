@@ -1,4 +1,4 @@
-class MyNavMenu extends Augmented.Presentation.Component.NavigationMenu {
+class MyNavMenu extends Components.NavigationMenu {
 	constructor() {
 		super({ "el": "#sandbox", "name": "monkey", "menuItems": [{ "id": "monkey", "click": "monkeyClick", "icon": "info", "title": "Monkey", "spacer": false }]});
 	}
@@ -7,7 +7,7 @@ class MyNavMenu extends Augmented.Presentation.Component.NavigationMenu {
 describe('Given Augmented Presentation Hamburger Menu View', () => {
 	describe('Given a Hamburger Menu View', () => {
 		it('is defined', () => {
-			expect(Augmented.Presentation.Component.NavigationMenu).to.not.be.undefined;
+			expect(Components.NavigationMenu).to.not.be.undefined;
 		});
 
 		describe('Given a NavigationMenu instance', () => {
