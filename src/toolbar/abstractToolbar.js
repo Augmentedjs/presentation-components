@@ -1,4 +1,4 @@
-import Augmented from "augmentedjs-next";
+import { isObject, isString } from "next-core-utilities";
 import Dom from "presentation-dom";
 import Model from "presentation-models";
 import { DecoratorView } from "presentation-decorator";
@@ -22,13 +22,13 @@ class AbstractToolbar extends DecoratorView {
       this.model = new Model();
     }
     if (options) {
-      if (options.data && (Augmented.isObject(options.data))) {
+      if (options.data && (isObject(options.data))) {
         this.model.set(options.data);
       }
-      if (options.title && (Augmented.isString(options.title))) {
+      if (options.title && (isString(options.title))) {
         this.title = options.title;
       }
-      if (options.menuItems && (Augmented.isObject(options.menuItems))) {
+      if (options.menuItems && (isObject(options.menuItems))) {
         this._menuItems = options.menuItems;
       }
     }
@@ -39,7 +39,7 @@ class AbstractToolbar extends DecoratorView {
 
   /**
     * The model property
-    * @property {Augmented.Model} model The model property
+    * @property {Model} model The model property
     */
 
   /**
