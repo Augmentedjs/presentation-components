@@ -27,7 +27,7 @@ class Toolbar extends AbstractToolbar {
         // the menu
         Dom.addClass(e, "toolbar");
         e.setAttribute("data-" + this.name, "toolbar");
-        e.innerHTML = buildMenuItems(this.name, this.menuItems);
+        e.innerHTML = buildMenuItems(this.name, this.menuItems, this.tooltip);
       }
     } else {
       //_logger.warn("AUGMENTED: Toolbar no element anchor, not rendering.");

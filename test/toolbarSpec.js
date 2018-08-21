@@ -27,4 +27,29 @@ describe('Given a Toolbar Component', () => {
 			expect(t.menuItems).to.not.deep.equal([]);
 		});
 	});
+
+	describe('Given an Iconbar instance', () => {
+		let t = null;
+		beforeEach(() => {
+			t = new Components.Iconbar();
+		});
+		afterEach(() => {
+			t = null;
+		});
+
+		it('can create an instance', () => {
+			expect(t).to.not.be.undefined;
+		});
+
+		it('can create an instance, has items', () => {
+			expect(t.menuItems).to.not.be.undefined;
+			expect(t.menuItems).to.deep.equal([]);
+		});
+
+		it('can add items', () => {
+			t.addSpacer();
+			expect(t.menuItems).to.not.be.undefined;
+			expect(t.menuItems).to.not.deep.equal([]);
+		});
+	});
 });

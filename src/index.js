@@ -13,6 +13,7 @@ import NotificationCenter from "./notification/notificationCenter.js";
 import Notification from "./notification/notify.js";
 import Splash from "./splash/splash.js";
 import Toolbar from "./toolbar/toolbar.js";
+import Iconbar from "./toolbar/iconbar.js";
 
 module.exports.Article = Article;
 module.exports.Card = Card;
@@ -29,3 +30,4 @@ module.exports.NotificationCenter = NotificationCenter;
 module.exports.Notification = Notification;
 module.exports.Splash = Splash;
 module.exports.Toolbar = Toolbar;
+module.exports.Iconbar = Iconbar;

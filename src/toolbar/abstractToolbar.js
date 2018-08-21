@@ -31,6 +31,12 @@ class AbstractToolbar extends DecoratorView {
       if (options.menuItems && (isObject(options.menuItems))) {
         this._menuItems = options.menuItems;
       }
+
+      if (options.tooltip) {
+        this.tooltip = options.tooltip;
+      } else {
+        this.tooltip = false;
+      }
     }
     if (this.el && this.name) {
       this.isInitalized = true;
