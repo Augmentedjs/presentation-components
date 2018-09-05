@@ -10,7 +10,7 @@ const buildIconItems = (name, data, tooltip) => {
         items = items + `
           <div id="${data[i].id}" data-${name}="${data[i].id}" data-click="${data[i].click}"${(tooltip) ? ' title="' + data[i].title + '"' : ''}>
             ${( (data[i].icon && !data[i].isImageLink) ? ('<i class="material-icons md-dark">' + data[i].icon + '</i>') : '' )}
-            ${( (data[i].icon && data[i].isImageLink) ? ('<img href="' + data[i].icon + '" alt="' + data[i].title + '" />') : '' )}
+            ${( (data[i].icon && data[i].isImageLink) ? ('<img src="' + data[i].icon + '" alt="' + data[i].title + '" />') : '' )}
           </div>
         `;
       }
