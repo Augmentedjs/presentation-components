@@ -50,7 +50,6 @@ module.exports = {
       amd: 'presentation-mediator',
       root: 'presentation-mediator'
     },
-
     'presentation-view': {
       commonjs: 'presentation-view',
       commonjs2: 'presentation-view',

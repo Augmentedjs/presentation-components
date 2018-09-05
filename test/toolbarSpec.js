@@ -46,7 +46,12 @@ describe('Given a Toolbar Component', () => {
 			expect(t.menuItems).to.deep.equal([]);
 		});
 
-		it('can add items', () => {
+		it('can add icons', () => {
+			t.addIcon("id", "click", "icon", "title", false);
+			expect(t.menuItems).to.not.be.undefined;
+		});
+
+		it('can add a spacer', () => {
 			t.addSpacer();
 			expect(t.menuItems).to.not.be.undefined;
 			expect(t.menuItems).to.not.deep.equal([]);

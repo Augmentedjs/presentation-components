@@ -783,6 +783,16 @@
           "presentation.component.abstracttoolbar#addspac",
           "spacer"
         ],
+        "Presentation.Component.AbstractToolbar.html#clearMenuItems": [
+          "abstracttoolbar#clearmenuitem",
+          "clear",
+          "clearmenuitem",
+          "component.abstracttoolbar#clearmenuitem",
+          "function",
+          "item",
+          "menu",
+          "presentation.component.abstracttoolbar#clearmenuitem"
+        ],
         "Presentation.Component.AbstractToolbar.html#select": [
           "abstracttoolbar#select",
           "component.abstracttoolbar#select",
@@ -803,15 +813,29 @@
           "menu",
           "presentation.component.abstracttoolbar#getitem"
         ],
-        "Presentation.Component.AbstractToolbar.html#clearMenuItems": [
-          "abstracttoolbar#clearmenuitem",
-          "clear",
-          "clearmenuitem",
-          "component.abstracttoolbar#clearmenuitem",
+        "Iconbar.html": [
+          "class",
+          "iconbar",
+          "view"
+        ],
+        "Iconbar.html#addIcon": [
+          "add",
+          "addicon",
+          "click",
           "function",
+          "icon",
+          "iconbar#addicon",
+          "id",
+          "isimagelink",
           "item",
           "menu",
-          "presentation.component.abstracttoolbar#clearmenuitem"
+          "tooltip"
+        ],
+        "Iconbar.html#render": [
+          "function",
+          "iconbar#rend",
+          "render",
+          "toolbar"
         ],
         "Presentation.Component.Toolbar.html": [
           "class",
@@ -829,7 +853,7 @@
           "toolbar#rend"
         ]
       },
-      "length": 77
+      "length": 80
     },
     "tokenStore": {
       "root": {
@@ -922,6 +946,10 @@
                 "Presentation.Component.AbstractToolbar.html#addSpacer": {
                   "ref": "Presentation.Component.AbstractToolbar.html#addSpacer",
                   "tf": 12.5
+                },
+                "Iconbar.html#addIcon": {
+                  "ref": "Iconbar.html#addIcon",
+                  "tf": 16.666666666666664
                 }
               },
               "s": {
@@ -978,6 +1006,20 @@
                         "Presentation.Component.AbstractToolbar.html#addItem": {
                           "ref": "Presentation.Component.AbstractToolbar.html#addItem",
                           "tf": 591.6666666666666
+                        }
+                      }
+                    }
+                  }
+                },
+                "c": {
+                  "docs": {},
+                  "o": {
+                    "docs": {},
+                    "n": {
+                      "docs": {
+                        "Iconbar.html#addIcon": {
+                          "ref": "Iconbar.html#addIcon",
+                          "tf": 666.6666666666666
                         }
                       }
                     }
@@ -1488,6 +1530,50 @@
                                             }
                                           }
                                         },
+                                        "c": {
+                                          "docs": {},
+                                          "l": {
+                                            "docs": {},
+                                            "e": {
+                                              "docs": {},
+                                              "a": {
+                                                "docs": {},
+                                                "r": {
+                                                  "docs": {},
+                                                  "m": {
+                                                    "docs": {},
+                                                    "e": {
+                                                      "docs": {},
+                                                      "n": {
+                                                        "docs": {},
+                                                        "u": {
+                                                          "docs": {},
+                                                          "i": {
+                                                            "docs": {},
+                                                            "t": {
+                                                              "docs": {},
+                                                              "e": {
+                                                                "docs": {},
+                                                                "m": {
+                                                                  "docs": {
+                                                                    "Presentation.Component.AbstractToolbar.html#clearMenuItems": {
+                                                                      "ref": "Presentation.Component.AbstractToolbar.html#clearMenuItems",
+                                                                      "tf": 75
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
                                         "s": {
                                           "docs": {},
                                           "e": {
@@ -1528,50 +1614,6 @@
                                                         "Presentation.Component.AbstractToolbar.html#getItem": {
                                                           "ref": "Presentation.Component.AbstractToolbar.html#getItem",
                                                           "tf": 75
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        },
-                                        "c": {
-                                          "docs": {},
-                                          "l": {
-                                            "docs": {},
-                                            "e": {
-                                              "docs": {},
-                                              "a": {
-                                                "docs": {},
-                                                "r": {
-                                                  "docs": {},
-                                                  "m": {
-                                                    "docs": {},
-                                                    "e": {
-                                                      "docs": {},
-                                                      "n": {
-                                                        "docs": {},
-                                                        "u": {
-                                                          "docs": {},
-                                                          "i": {
-                                                            "docs": {},
-                                                            "t": {
-                                                              "docs": {},
-                                                              "e": {
-                                                                "docs": {},
-                                                                "m": {
-                                                                  "docs": {
-                                                                    "Presentation.Component.AbstractToolbar.html#clearMenuItems": {
-                                                                      "ref": "Presentation.Component.AbstractToolbar.html#clearMenuItems",
-                                                                      "tf": 75
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
                                                         }
                                                       }
                                                     }
@@ -2003,6 +2045,70 @@
                   "Presentation.Component.AbstractToolbar.html#addItem": {
                     "ref": "Presentation.Component.AbstractToolbar.html#addItem",
                     "tf": 16.666666666666664
+                  },
+                  "Iconbar.html#addIcon": {
+                    "ref": "Iconbar.html#addIcon",
+                    "tf": 16.666666666666664
+                  }
+                },
+                "b": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "r": {
+                      "docs": {
+                        "Iconbar.html": {
+                          "ref": "Iconbar.html",
+                          "tf": 1925
+                        }
+                      },
+                      "#": {
+                        "docs": {},
+                        "a": {
+                          "docs": {},
+                          "d": {
+                            "docs": {},
+                            "d": {
+                              "docs": {},
+                              "i": {
+                                "docs": {},
+                                "c": {
+                                  "docs": {},
+                                  "o": {
+                                    "docs": {},
+                                    "n": {
+                                      "docs": {
+                                        "Iconbar.html#addIcon": {
+                                          "ref": "Iconbar.html#addIcon",
+                                          "tf": 1150
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "r": {
+                          "docs": {},
+                          "e": {
+                            "docs": {},
+                            "n": {
+                              "docs": {},
+                              "d": {
+                                "docs": {
+                                  "Iconbar.html#render": {
+                                    "ref": "Iconbar.html#render",
+                                    "tf": 1150
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -2033,6 +2139,10 @@
               "Presentation.Component.AbstractToolbar.html#getItem": {
                 "ref": "Presentation.Component.AbstractToolbar.html#getItem",
                 "tf": 50
+              },
+              "Iconbar.html#addIcon": {
+                "ref": "Iconbar.html#addIcon",
+                "tf": 16.666666666666664
               }
             }
           },
@@ -2070,6 +2180,10 @@
                     "ref": "Presentation.Component.AbstractToolbar.html#addSpacer",
                     "tf": 12.5
                   },
+                  "Presentation.Component.AbstractToolbar.html#clearMenuItems": {
+                    "ref": "Presentation.Component.AbstractToolbar.html#clearMenuItems",
+                    "tf": 16.666666666666664
+                  },
                   "Presentation.Component.AbstractToolbar.html#select": {
                     "ref": "Presentation.Component.AbstractToolbar.html#select",
                     "tf": 16.666666666666664
@@ -2078,9 +2192,44 @@
                     "ref": "Presentation.Component.AbstractToolbar.html#getItem",
                     "tf": 25
                   },
-                  "Presentation.Component.AbstractToolbar.html#clearMenuItems": {
-                    "ref": "Presentation.Component.AbstractToolbar.html#clearMenuItems",
+                  "Iconbar.html#addIcon": {
+                    "ref": "Iconbar.html#addIcon",
                     "tf": 16.666666666666664
+                  }
+                }
+              }
+            }
+          },
+          "s": {
+            "docs": {},
+            "i": {
+              "docs": {},
+              "m": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "g": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "l": {
+                        "docs": {},
+                        "i": {
+                          "docs": {},
+                          "n": {
+                            "docs": {},
+                            "k": {
+                              "docs": {
+                                "Iconbar.html#addIcon": {
+                                  "ref": "Iconbar.html#addIcon",
+                                  "tf": 16.666666666666664
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -3024,6 +3173,50 @@
                                                                                           }
                                                                                         }
                                                                                       },
+                                                                                      "c": {
+                                                                                        "docs": {},
+                                                                                        "l": {
+                                                                                          "docs": {},
+                                                                                          "e": {
+                                                                                            "docs": {},
+                                                                                            "a": {
+                                                                                              "docs": {},
+                                                                                              "r": {
+                                                                                                "docs": {},
+                                                                                                "m": {
+                                                                                                  "docs": {},
+                                                                                                  "e": {
+                                                                                                    "docs": {},
+                                                                                                    "n": {
+                                                                                                      "docs": {},
+                                                                                                      "u": {
+                                                                                                        "docs": {},
+                                                                                                        "i": {
+                                                                                                          "docs": {},
+                                                                                                          "t": {
+                                                                                                            "docs": {},
+                                                                                                            "e": {
+                                                                                                              "docs": {},
+                                                                                                              "m": {
+                                                                                                                "docs": {
+                                                                                                                  "Presentation.Component.AbstractToolbar.html#clearMenuItems": {
+                                                                                                                    "ref": "Presentation.Component.AbstractToolbar.html#clearMenuItems",
+                                                                                                                    "tf": 1075
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      },
                                                                                       "s": {
                                                                                         "docs": {},
                                                                                         "e": {
@@ -3064,50 +3257,6 @@
                                                                                                       "Presentation.Component.AbstractToolbar.html#getItem": {
                                                                                                         "ref": "Presentation.Component.AbstractToolbar.html#getItem",
                                                                                                         "tf": 1075
-                                                                                                      }
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      },
-                                                                                      "c": {
-                                                                                        "docs": {},
-                                                                                        "l": {
-                                                                                          "docs": {},
-                                                                                          "e": {
-                                                                                            "docs": {},
-                                                                                            "a": {
-                                                                                              "docs": {},
-                                                                                              "r": {
-                                                                                                "docs": {},
-                                                                                                "m": {
-                                                                                                  "docs": {},
-                                                                                                  "e": {
-                                                                                                    "docs": {},
-                                                                                                    "n": {
-                                                                                                      "docs": {},
-                                                                                                      "u": {
-                                                                                                        "docs": {},
-                                                                                                        "i": {
-                                                                                                          "docs": {},
-                                                                                                          "t": {
-                                                                                                            "docs": {},
-                                                                                                            "e": {
-                                                                                                              "docs": {},
-                                                                                                              "m": {
-                                                                                                                "docs": {
-                                                                                                                  "Presentation.Component.AbstractToolbar.html#clearMenuItems": {
-                                                                                                                    "ref": "Presentation.Component.AbstractToolbar.html#clearMenuItems",
-                                                                                                                    "tf": 1075
-                                                                                                                  }
-                                                                                                                }
-                                                                                                              }
-                                                                                                            }
-                                                                                                          }
-                                                                                                        }
                                                                                                       }
                                                                                                     }
                                                                                                   }
@@ -4599,6 +4748,10 @@
                         "ref": "Presentation.Component.NotificationCenter.html#render",
                         "tf": 700
                       },
+                      "Iconbar.html#render": {
+                        "ref": "Iconbar.html#render",
+                        "tf": 775
+                      },
                       "Presentation.Component.Toolbar.html#render": {
                         "ref": "Presentation.Component.Toolbar.html#render",
                         "tf": 700
@@ -5157,6 +5310,10 @@
                       "ref": "Presentation.Component.AbstractToolbar.html",
                       "tf": 110
                     },
+                    "Iconbar.html": {
+                      "ref": "Iconbar.html",
+                      "tf": 110
+                    },
                     "Presentation.Component.Toolbar.html": {
                       "ref": "Presentation.Component.Toolbar.html",
                       "tf": 110
@@ -5324,6 +5481,10 @@
                     },
                     "Presentation.Component.AbstractToolbar.html#addItem": {
                       "ref": "Presentation.Component.AbstractToolbar.html#addItem",
+                      "tf": 16.666666666666664
+                    },
+                    "Iconbar.html#addIcon": {
+                      "ref": "Iconbar.html#addIcon",
                       "tf": 16.666666666666664
                     }
                   }
@@ -5807,6 +5968,50 @@
                                                                 }
                                                               }
                                                             },
+                                                            "c": {
+                                                              "docs": {},
+                                                              "l": {
+                                                                "docs": {},
+                                                                "e": {
+                                                                  "docs": {},
+                                                                  "a": {
+                                                                    "docs": {},
+                                                                    "r": {
+                                                                      "docs": {},
+                                                                      "m": {
+                                                                        "docs": {},
+                                                                        "e": {
+                                                                          "docs": {},
+                                                                          "n": {
+                                                                            "docs": {},
+                                                                            "u": {
+                                                                              "docs": {},
+                                                                              "i": {
+                                                                                "docs": {},
+                                                                                "t": {
+                                                                                  "docs": {},
+                                                                                  "e": {
+                                                                                    "docs": {},
+                                                                                    "m": {
+                                                                                      "docs": {
+                                                                                        "Presentation.Component.AbstractToolbar.html#clearMenuItems": {
+                                                                                          "ref": "Presentation.Component.AbstractToolbar.html#clearMenuItems",
+                                                                                          "tf": 75
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
                                                             "s": {
                                                               "docs": {},
                                                               "e": {
@@ -5847,50 +6052,6 @@
                                                                             "Presentation.Component.AbstractToolbar.html#getItem": {
                                                                               "ref": "Presentation.Component.AbstractToolbar.html#getItem",
                                                                               "tf": 75
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            },
-                                                            "c": {
-                                                              "docs": {},
-                                                              "l": {
-                                                                "docs": {},
-                                                                "e": {
-                                                                  "docs": {},
-                                                                  "a": {
-                                                                    "docs": {},
-                                                                    "r": {
-                                                                      "docs": {},
-                                                                      "m": {
-                                                                        "docs": {},
-                                                                        "e": {
-                                                                          "docs": {},
-                                                                          "n": {
-                                                                            "docs": {},
-                                                                            "u": {
-                                                                              "docs": {},
-                                                                              "i": {
-                                                                                "docs": {},
-                                                                                "t": {
-                                                                                  "docs": {},
-                                                                                  "e": {
-                                                                                    "docs": {},
-                                                                                    "m": {
-                                                                                      "docs": {
-                                                                                        "Presentation.Component.AbstractToolbar.html#clearMenuItems": {
-                                                                                          "ref": "Presentation.Component.AbstractToolbar.html#clearMenuItems",
-                                                                                          "tf": 75
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
                                                                             }
                                                                           }
                                                                         }
@@ -8107,6 +8268,10 @@
                             "ref": "Presentation.Component.AbstractToolbar.html#addSpacer",
                             "tf": 110
                           },
+                          "Presentation.Component.AbstractToolbar.html#clearMenuItems": {
+                            "ref": "Presentation.Component.AbstractToolbar.html#clearMenuItems",
+                            "tf": 110
+                          },
                           "Presentation.Component.AbstractToolbar.html#select": {
                             "ref": "Presentation.Component.AbstractToolbar.html#select",
                             "tf": 110
@@ -8115,8 +8280,12 @@
                             "ref": "Presentation.Component.AbstractToolbar.html#getItem",
                             "tf": 110
                           },
-                          "Presentation.Component.AbstractToolbar.html#clearMenuItems": {
-                            "ref": "Presentation.Component.AbstractToolbar.html#clearMenuItems",
+                          "Iconbar.html#addIcon": {
+                            "ref": "Iconbar.html#addIcon",
+                            "tf": 110
+                          },
+                          "Iconbar.html#render": {
+                            "ref": "Iconbar.html#render",
                             "tf": 110
                           },
                           "Presentation.Component.Toolbar.html#render": {
@@ -8714,6 +8883,10 @@
                     "ref": "Presentation.Component.AbstractToolbar.html#addSpacer",
                     "tf": 12.5
                   },
+                  "Presentation.Component.AbstractToolbar.html#clearMenuItems": {
+                    "ref": "Presentation.Component.AbstractToolbar.html#clearMenuItems",
+                    "tf": 16.666666666666664
+                  },
                   "Presentation.Component.AbstractToolbar.html#select": {
                     "ref": "Presentation.Component.AbstractToolbar.html#select",
                     "tf": 16.666666666666664
@@ -8722,8 +8895,8 @@
                     "ref": "Presentation.Component.AbstractToolbar.html#getItem",
                     "tf": 25
                   },
-                  "Presentation.Component.AbstractToolbar.html#clearMenuItems": {
-                    "ref": "Presentation.Component.AbstractToolbar.html#clearMenuItems",
+                  "Iconbar.html#addIcon": {
+                    "ref": "Iconbar.html#addIcon",
                     "tf": 16.666666666666664
                   }
                 },
@@ -8868,6 +9041,10 @@
                     "ref": "Splash.html",
                     "tf": 16.666666666666664
                   },
+                  "Iconbar.html": {
+                    "ref": "Iconbar.html",
+                    "tf": 25
+                  },
                   "Presentation.Component.Toolbar.html": {
                     "ref": "Presentation.Component.Toolbar.html",
                     "tf": 25
@@ -8978,12 +9155,30 @@
                     }
                   }
                 },
+                "t": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "p": {
+                      "docs": {
+                        "Iconbar.html#addIcon": {
+                          "ref": "Iconbar.html#addIcon",
+                          "tf": 16.666666666666664
+                        }
+                      }
+                    }
+                  }
+                },
                 "b": {
                   "docs": {},
                   "a": {
                     "docs": {},
                     "r": {
                       "docs": {
+                        "Iconbar.html#render": {
+                          "ref": "Iconbar.html#render",
+                          "tf": 25
+                        },
                         "Presentation.Component.Toolbar.html": {
                           "ref": "Presentation.Component.Toolbar.html",
                           "tf": 725
@@ -9157,7 +9352,7 @@
           }
         }
       },
-      "length": 662
+      "length": 680
     },
     "corpusTokens": [
       "abstract",
@@ -9168,6 +9363,7 @@
       "abstracttoolbar#getitem",
       "abstracttoolbar#select",
       "add",
+      "addicon",
       "additem",
       "addsect",
       "addspac",
@@ -9338,8 +9534,12 @@
       "hidenotif",
       "html",
       "icon",
+      "iconbar",
+      "iconbar#addicon",
+      "iconbar#rend",
       "id",
       "index",
+      "isimagelink",
       "item",
       "list",
       "list:class",
@@ -9481,6 +9681,7 @@
       "toolbar",
       "toolbar#rend",
       "tooldbar",
+      "tooltip",
       "trigger",
       "up",
       "view",
@@ -10233,6 +10434,16 @@
       "summary": "",
       "description": "Adds a spacer item to the menu"
     },
+    "Presentation.Component.AbstractToolbar.html#clearMenuItems": {
+      "id": "Presentation.Component.AbstractToolbar.html#clearMenuItems",
+      "kind": "function",
+      "title": "clearMenuItems()",
+      "longname": "Presentation.Component.AbstractToolbar#clearMenuItems",
+      "name": "clearMenuItems",
+      "tags": "Presentation.Component.AbstractToolbar#clearMenuItems Component.AbstractToolbar#clearMenuItems AbstractToolbar#clearMenuItems clearMenuItems",
+      "summary": "",
+      "description": "Clear all items in the menu"
+    },
     "Presentation.Component.AbstractToolbar.html#select": {
       "id": "Presentation.Component.AbstractToolbar.html#select",
       "kind": "function",
@@ -10253,15 +10464,36 @@
       "summary": "",
       "description": "Get an item in the menu"
     },
-    "Presentation.Component.AbstractToolbar.html#clearMenuItems": {
-      "id": "Presentation.Component.AbstractToolbar.html#clearMenuItems",
-      "kind": "function",
-      "title": "clearMenuItems()",
-      "longname": "Presentation.Component.AbstractToolbar#clearMenuItems",
-      "name": "clearMenuItems",
-      "tags": "Presentation.Component.AbstractToolbar#clearMenuItems Component.AbstractToolbar#clearMenuItems AbstractToolbar#clearMenuItems clearMenuItems",
+    "Iconbar.html": {
+      "id": "Iconbar.html",
+      "kind": "class",
+      "title": "Iconbar",
+      "longname": "Iconbar",
+      "name": "Iconbar",
+      "tags": "Iconbar",
       "summary": "",
-      "description": "Clear all items in the menu"
+      "description": "An Iconbar View",
+      "body": ""
+    },
+    "Iconbar.html#addIcon": {
+      "id": "Iconbar.html#addIcon",
+      "kind": "function",
+      "title": "addIcon( id, click, icon, toolTip, isImageLink )",
+      "longname": "Iconbar#addIcon",
+      "name": "addIcon",
+      "tags": "Iconbar#addIcon addIcon",
+      "summary": "",
+      "description": "Adds an item to the menu"
+    },
+    "Iconbar.html#render": {
+      "id": "Iconbar.html#render",
+      "kind": "function",
+      "title": "render()",
+      "longname": "Iconbar#render",
+      "name": "render",
+      "tags": "Iconbar#render render",
+      "summary": "",
+      "description": "Render the Toolbar"
     },
     "Presentation.Component.Toolbar.html": {
       "id": "Presentation.Component.Toolbar.html",

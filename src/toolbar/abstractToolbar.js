@@ -54,7 +54,7 @@ class AbstractToolbar extends DecoratorView {
     */
 
   /**
-    * The menuitems property
+    * The menuItems property
     * @property {array} menuItems The initialized property
     */
 
