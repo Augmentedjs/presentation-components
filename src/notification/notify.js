@@ -3,18 +3,13 @@ import DialogView from "../dialog/dialog.js";
 /**
  * Notification
  * @param options Options to pass
- * @example options passed are: title, subTitle, subSubTitle, name, style, and figureStyle
- *
+ * @example options passed are: timeOut, name, style
  */
 class Notification extends DialogView {
   constructor(options) {
     if (!options) {
       options = {};
     };
-    
-    if (!options.buttons) {
-      options.buttons = {};
-    }
 
     if (!options.style) {
       options.style = "notify";
@@ -28,13 +23,15 @@ class Notification extends DialogView {
 
     options.tagName = "div";
 
+    options.buttons = {};
+
+    super(options);
+
     if (options.timeOut) {
       this.timeOut = options.timeOut;
     } else {
       this.timeOut = 2000;
     }
-
-    super(options);
   };
 
   /**
