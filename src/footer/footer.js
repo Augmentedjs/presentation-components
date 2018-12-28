@@ -28,11 +28,19 @@ class Footer extends DecoratorView {
   };
 
   /**
+   * template - sets content of the footer, handled internally
+   * @private
+   */
+  _template() {
+    return this._body;
+  };
+
+  /**
    * render
    */
   render() {
     if (this.el) {
-      Dom.setValue(this.el, this.template);
+      Dom.setValue(this.el, this._template());
       this.delegateEvents();
       this.syncAllBoundElements();
     }
