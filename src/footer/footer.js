@@ -1,4 +1,5 @@
 import { DecoratorView } from "presentation-decorator";
+import Dom from "presentation-dom";
 
 /**
  * A Footer Component
