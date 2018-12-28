@@ -1,6 +1,6 @@
 {
   "name": "presentation-components",
-  "version": "2.7.4",
+  "version": "2.7.5",
   "description": "The Augmented.js Next - Presentation Components Module.",
   "main": "dist/presentation-components.js",
   "scripts": {

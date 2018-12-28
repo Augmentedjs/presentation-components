@@ -32,8 +32,9 @@ class Footer extends DecoratorView {
    */
   render() {
     if (this.el) {
-      Dom.setValue(this.el, this._template());
+      Dom.setValue(this.el, this.template);
       this.delegateEvents();
+      this.syncAllBoundElements();
     }
     return this;
   };
