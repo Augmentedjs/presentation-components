@@ -1,6 +1,6 @@
 {
   "name": "presentation-components",
-  "version": "2.8.1",
+  "version": "2.8.2",
   "description": "The Augmented.js Next - Presentation Components Module.",
   "main": "dist/presentation-components.js",
   "scripts": {
@@ -21,7 +21,8 @@
   },
   "keywords": [
     "augmentedjs",
-    "presentation"
+    "presentation",
+    "components"
   ],
   "author": "Bob Warren <jedi.master@augmentedjs.com> (http://www.augmentedjs.com)",
   "license": "Apache-2.0",
@@ -50,7 +51,8 @@
     "presentation-mediator": "^2.5.9",
     "presentation-models": "^2.6.3",
     "presentation-navigation": "^2.6.0",
-    "presentation-view": "^2.5.5"
+    "presentation-view": "^2.5.5",
+    "presentation-dialogs": "^2.6.0"
   },
   "bugs": {
     "url": "https://github.com/Augmentedjs/presentation-components/issues"

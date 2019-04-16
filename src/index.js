@@ -1,16 +1,12 @@
-// Separated to it's own module, imported for backward compatability 
+// Separated to it's own module, imported for backward compatability
 import { HamburgerMenu, Menu, NavigationMenu, NotificationCenter, Toolbar, Iconbar } from "presentation-navigation";
+import { DialogView, ConfirmationDialogView, AlertDialogView, Notification, Splash } from "presentation-dialogs";
 
 import Article from "./article/article.js";
 import Card from "./card/card.js";
-import DialogView from "./dialog/dialog.js";
-import ConfirmationDialogView from "./dialog/confirmation.js";
-import AlertDialogView from "./dialog/alert.js";
 import Footer from "./footer/footer.js";
 import Header from "./header/header.js";
 import Manager from "./manager/manager.js";
-import Notification from "./notification/notify.js";
-import Splash from "./splash/splash.js";
 
 module.exports.Article = Article;
 module.exports.Card = Card;
