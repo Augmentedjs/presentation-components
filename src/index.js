@@ -1,3 +1,6 @@
+// Separated to it's own module, imported for backward compatability 
+import { HamburgerMenu, Menu, NavigationMenu, NotificationCenter, Toolbar, Iconbar } from "presentation-navigation";
+
 import Article from "./article/article.js";
 import Card from "./card/card.js";
 import DialogView from "./dialog/dialog.js";
@@ -6,14 +9,8 @@ import AlertDialogView from "./dialog/alert.js";
 import Footer from "./footer/footer.js";
 import Header from "./header/header.js";
 import Manager from "./manager/manager.js";
-import HamburgerMenu from "./menu/hamburgerMenu.js";
-import Menu from "./menu/menu.js";
-import NavigationMenu from "./menu/navigation.js";
-import NotificationCenter from "./notification/notificationCenter.js";
 import Notification from "./notification/notify.js";
 import Splash from "./splash/splash.js";
-import Toolbar from "./toolbar/toolbar.js";
-import Iconbar from "./toolbar/iconbar.js";
 
 module.exports.Article = Article;
 module.exports.Card = Card;

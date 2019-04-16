@@ -61,6 +61,12 @@ module.exports = {
       commonjs2: 'presentation-dom',
       amd: 'presentation-dom',
       root: 'presentation-dom'
+    },
+    'presentation-navigation': {
+      commonjs: 'presentation-navigation',
+      commonjs2: 'presentation-navigation',
+      amd: 'presentation-navigation',
+      root: 'presentation-navigation'
     }
   },
   stats: "errors-only",
