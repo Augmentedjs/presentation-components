@@ -38,51 +38,22 @@ Augmented.js Presentation Simple Components Module
         -   [Parameters](#parameters-9)
     -   [render](#render-1)
     -   [remove](#remove)
--   [DialogView](#dialogview)
-    -   [Parameters](#parameters-10)
-    -   [title](#title)
-        -   [Parameters](#parameters-11)
-    -   [style](#style-2)
-        -   [Parameters](#parameters-12)
-    -   [style](#style-3)
-        -   [Parameters](#parameters-13)
-    -   [buttons](#buttons)
-        -   [Parameters](#parameters-14)
-    -   [body](#body-2)
-        -   [Parameters](#parameters-15)
-    -   [render](#render-2)
-    -   [cancel](#cancel)
-        -   [Parameters](#parameters-16)
-    -   [open](#open)
-        -   [Parameters](#parameters-17)
-    -   [close](#close)
-        -   [Parameters](#parameters-18)
--   [ConfirmationDialogView](#confirmationdialogview)
-    -   [Parameters](#parameters-19)
--   [AlertDialogView](#alertdialogview)
-    -   [Parameters](#parameters-20)
 -   [Footer](#footer-1)
-    -   [Parameters](#parameters-21)
-    -   [body](#body-3)
-        -   [Parameters](#parameters-22)
-    -   [render](#render-3)
+    -   [Parameters](#parameters-10)
+    -   [body](#body-2)
+        -   [Parameters](#parameters-11)
+    -   [render](#render-2)
 -   [Header](#header-1)
-    -   [Parameters](#parameters-23)
-    -   [title](#title-1)
-        -   [Parameters](#parameters-24)
+    -   [Parameters](#parameters-12)
+    -   [title](#title)
+        -   [Parameters](#parameters-13)
         -   [Properties](#properties-4)
     -   [subTitle](#subtitle)
-        -   [Parameters](#parameters-25)
+        -   [Parameters](#parameters-14)
         -   [Properties](#properties-5)
-    -   [render](#render-4)
+    -   [render](#render-3)
     -   [remove](#remove-1)
 -   [Presentation.Component.Header](#presentationcomponentheader)
--   [Notification](#notification)
-    -   [Parameters](#parameters-26)
-    -   [Examples](#examples-2)
--   [Splash](#splash)
-    -   [Parameters](#parameters-27)
-    -   [Examples](#examples-3)
 
 ## Article
 
@@ -232,104 +203,6 @@ render
 
 remove
 
-## DialogView
-
-**Extends Presentation.DecoratorView**
-
-A automatic dialog view - creates a dialog with simple configurations to customize
-
-### Parameters
-
--   `options`  
-
-### title
-
-title property - the title of the dialog
-
-#### Parameters
-
--   `title`  
-
-### style
-
-body property - the body of the dialog, handled by setBody method
-
-#### Parameters
-
--   `style`  
-
-### style
-
-style property - the style (form, alert, bigForm, or whatever class you want)
-
-#### Parameters
-
--   `style`  
-
-### buttons
-
-buttons object property - the buttons to match to functions
-
-#### Parameters
-
--   `buttons`  
-
-### body
-
-setBody - sets the body content of the dialog
-
-#### Parameters
-
--   `body` **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** A string value of th body (supports HTML)
-
-### render
-
-render - render the dialog
-
-### cancel
-
-cancel - standard built-in cancel callback.  Calls close method by default
-
-#### Parameters
-
--   `event` **[Event](https://developer.mozilla.org/docs/Web/API/Event)** Event passed in
-
-### open
-
-open - standard built-in open callback.  Calls render method by default
-
-#### Parameters
-
--   `event` **[Event](https://developer.mozilla.org/docs/Web/API/Event)** Event passed in
-
-### close
-
-close - standard built-in close callback.  Closes the dialog, triggers the 'close' event
-
-#### Parameters
-
--   `event` **[Event](https://developer.mozilla.org/docs/Web/API/Event)** Event passed in
-
-## ConfirmationDialogView
-
-**Extends Presentation.Component.DialogView**
-
-A automatic comfirmation dialog view - creates a dialog with yes no buttons
-
-### Parameters
-
--   `options`  
-
-## AlertDialogView
-
-**Extends Presentation.Component.DialogView**
-
-A automatic alert dialog view - creates a dialog with cancel button and a message
-
-### Parameters
-
--   `options`  
-
 ## Footer
 
 **Extends Presentation.DecoratorView**
@@ -399,35 +272,3 @@ Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/G
 **Extends Presentation.Mediator**
 
 A Component Manager
-
-## Notification
-
-**Extends DialogView**
-
-Notification
-
-### Parameters
-
--   `options`  Options to pass
-
-### Examples
-
-```javascript
-options passed are: timeOut, name, style
-```
-
-## Splash
-
-**Extends View**
-
-Splash Screen View
-
-### Parameters
-
--   `options`  Options to pass
-
-### Examples
-
-```javascript
-options passed are: title, subTitle, subSubTitle, name, style, and figureStyle
-```
