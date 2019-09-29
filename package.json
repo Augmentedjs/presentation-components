@@ -1,12 +1,11 @@
 {
   "name": "presentation-components",
-  "version": "2.8.8",
+  "version": "2.8.9",
   "description": "The Augmented.js Next - Presentation Components Module.",
   "main": "dist/presentation-components.js",
   "scripts": {
     "dev": "webpack --mode development --module-bind js=babel-loader --progress",
     "build": "webpack --mode production --module-bind js=babel-loader --progress",
-    "lint": "eslint ./src/presentation-components.js",
     "test": "mocha --require babel-core/register --require test/helper.js -c test/*Spec.js",
     "start": "node index.js",
     "docs": "rm -rf jsdoc && jsdoc ./src -r -d ./jsdoc/ -R ./README.md -t ./node_modules/foodoc/template -c ./jsdoc.conf.json -P ./package.json",
@@ -29,30 +28,26 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
-    "babel-plugin-transform-regenerator": "^6.26.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
-    "documentation": "^11.0.1",
-    "eslint": "^6.0.1",
-    "eslint-config-kentcdodds": "^14.3.3",
+    "documentation": "^12.1.2",
     "foodoc": "0.0.9",
-    "jsdoc": "^3.6.2",
+    "jsdoc": "^3.6.3",
     "jsdom": "^15.1.1",
-    "mocha": "^6.1.4",
+    "mocha": "^6.2.1",
     "mocha-jsdom": "^2.0.0",
-    "webpack": "^4.35.0",
-    "webpack-cli": "^3.3.5"
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
   },
   "dependencies": {
-    "next-core-utilities": "^2.6.1",
-    "presentation-decorator": "^2.6.6",
+    "next-core-utilities": "^2.7.1",
+    "presentation-decorator": "^2.6.7",
     "presentation-dialogs": "^2.7.1",
     "presentation-dom": "^2.8.2",
-    "presentation-mediator": "^2.7.0",
+    "presentation-mediator": "^2.7.1",
     "presentation-models": "^2.6.4",
     "presentation-navigation": "^2.6.1",
-    "presentation-view": "^2.6.0"
+    "presentation-view": "^2.6.1"
   },
   "bugs": {
     "url": "https://github.com/Augmentedjs/presentation-components/issues"

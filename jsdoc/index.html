@@ -165,105 +165,37 @@
 <li><a href="#remove">remove</a></li>
 </ul>
 </li>
-<li><a href="#dialogview">DialogView</a>
+<li><a href="#footer-1">Footer</a>
 <ul>
 <li><a href="#parameters-10">Parameters</a></li>
-<li><a href="#title">title</a>
+<li><a href="#body-2">body</a>
 <ul>
 <li><a href="#parameters-11">Parameters</a></li>
 </ul>
 </li>
-<li><a href="#style-2">style</a>
-<ul>
-<li><a href="#parameters-12">Parameters</a></li>
-</ul>
-</li>
-<li><a href="#style-3">style</a>
-<ul>
-<li><a href="#parameters-13">Parameters</a></li>
-</ul>
-</li>
-<li><a href="#buttons">buttons</a>
-<ul>
-<li><a href="#parameters-14">Parameters</a></li>
-</ul>
-</li>
-<li><a href="#body-2">body</a>
-<ul>
-<li><a href="#parameters-15">Parameters</a></li>
-</ul>
-</li>
 <li><a href="#render-2">render</a></li>
-<li><a href="#cancel">cancel</a>
-<ul>
-<li><a href="#parameters-16">Parameters</a></li>
-</ul>
-</li>
-<li><a href="#open">open</a>
-<ul>
-<li><a href="#parameters-17">Parameters</a></li>
-</ul>
-</li>
-<li><a href="#close">close</a>
-<ul>
-<li><a href="#parameters-18">Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#confirmationdialogview">ConfirmationDialogView</a>
-<ul>
-<li><a href="#parameters-19">Parameters</a></li>
-</ul>
-</li>
-<li><a href="#alertdialogview">AlertDialogView</a>
-<ul>
-<li><a href="#parameters-20">Parameters</a></li>
-</ul>
-</li>
-<li><a href="#footer-1">Footer</a>
-<ul>
-<li><a href="#parameters-21">Parameters</a></li>
-<li><a href="#body-3">body</a>
-<ul>
-<li><a href="#parameters-22">Parameters</a></li>
-</ul>
-</li>
-<li><a href="#render-3">render</a></li>
 </ul>
 </li>
 <li><a href="#header-1">Header</a>
 <ul>
-<li><a href="#parameters-23">Parameters</a></li>
-<li><a href="#title-1">title</a>
+<li><a href="#parameters-12">Parameters</a></li>
+<li><a href="#title">title</a>
 <ul>
-<li><a href="#parameters-24">Parameters</a></li>
+<li><a href="#parameters-13">Parameters</a></li>
 <li><a href="#properties-4">Properties</a></li>
 </ul>
 </li>
 <li><a href="#subtitle">subTitle</a>
 <ul>
-<li><a href="#parameters-25">Parameters</a></li>
+<li><a href="#parameters-14">Parameters</a></li>
 <li><a href="#properties-5">Properties</a></li>
 </ul>
 </li>
-<li><a href="#render-4">render</a></li>
+<li><a href="#render-3">render</a></li>
 <li><a href="#remove-1">remove</a></li>
 </ul>
 </li>
 <li><a href="#presentationcomponentheader">Presentation.Component.Header</a></li>
-<li><a href="#notification">Notification</a>
-<ul>
-<li><a href="#parameters-26">Parameters</a></li>
-<li><a href="#examples-2">Examples</a></li>
-</ul>
-</li>
-<li><a href="#splash">Splash</a>
-<ul>
-<li><a href="#parameters-27">Parameters</a></li>
-<li><a href="#examples-3">Examples</a></li>
-</ul>
-</li>
 </ul>
 <h2>Article</h2>
 <p><strong>Extends Presentation.DecoratorView</strong></p>
@@ -376,77 +308,6 @@ Supported options are:<br/></p>
 <p>render</p>
 <h3>remove</h3>
 <p>remove</p>
-<h2>DialogView</h2>
-<p><strong>Extends Presentation.DecoratorView</strong></p>
-<p>A automatic dialog view - creates a dialog with simple configurations to customize</p>
-<h3>Parameters</h3>
-<ul>
-<li><code>options</code></li>
-</ul>
-<h3>title</h3>
-<p>title property - the title of the dialog</p>
-<h4>Parameters</h4>
-<ul>
-<li><code>title</code></li>
-</ul>
-<h3>style</h3>
-<p>body property - the body of the dialog, handled by setBody method</p>
-<h4>Parameters</h4>
-<ul>
-<li><code>style</code></li>
-</ul>
-<h3>style</h3>
-<p>style property - the style (form, alert, bigForm, or whatever class you want)</p>
-<h4>Parameters</h4>
-<ul>
-<li><code>style</code></li>
-</ul>
-<h3>buttons</h3>
-<p>buttons object property - the buttons to match to functions</p>
-<h4>Parameters</h4>
-<ul>
-<li><code>buttons</code></li>
-</ul>
-<h3>body</h3>
-<p>setBody - sets the body content of the dialog</p>
-<h4>Parameters</h4>
-<ul>
-<li><code>body</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></strong> A string value of th body (supports HTML)</li>
-</ul>
-<h3>render</h3>
-<p>render - render the dialog</p>
-<h3>cancel</h3>
-<p>cancel - standard built-in cancel callback.  Calls close method by default</p>
-<h4>Parameters</h4>
-<ul>
-<li><code>event</code> <strong><a href="https://developer.mozilla.org/docs/Web/API/Event">Event</a></strong> Event passed in</li>
-</ul>
-<h3>open</h3>
-<p>open - standard built-in open callback.  Calls render method by default</p>
-<h4>Parameters</h4>
-<ul>
-<li><code>event</code> <strong><a href="https://developer.mozilla.org/docs/Web/API/Event">Event</a></strong> Event passed in</li>
-</ul>
-<h3>close</h3>
-<p>close - standard built-in close callback.  Closes the dialog, triggers the 'close' event</p>
-<h4>Parameters</h4>
-<ul>
-<li><code>event</code> <strong><a href="https://developer.mozilla.org/docs/Web/API/Event">Event</a></strong> Event passed in</li>
-</ul>
-<h2>ConfirmationDialogView</h2>
-<p><strong>Extends Presentation.Component.DialogView</strong></p>
-<p>A automatic comfirmation dialog view - creates a dialog with yes no buttons</p>
-<h3>Parameters</h3>
-<ul>
-<li><code>options</code></li>
-</ul>
-<h2>AlertDialogView</h2>
-<p><strong>Extends Presentation.Component.DialogView</strong></p>
-<p>A automatic alert dialog view - creates a dialog with cancel button and a message</p>
-<h3>Parameters</h3>
-<ul>
-<li><code>options</code></li>
-</ul>
 <h2>Footer</h2>
 <p><strong>Extends Presentation.DecoratorView</strong></p>
 <p>A Footer Component</p>
@@ -495,27 +356,7 @@ Supported options are:<br/></p>
 <p>Returns <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></strong> Returns the view context ('this')</p>
 <h2>Presentation.Component.Header</h2>
 <p><strong>Extends Presentation.Mediator</strong></p>
-<p>A Component Manager</p>
-<h2>Notification</h2>
-<p><strong>Extends DialogView</strong></p>
-<p>Notification</p>
-<h3>Parameters</h3>
-<ul>
-<li><code>options</code>  Options to pass</li>
-</ul>
-<h3>Examples</h3>
-<pre class="prettyprint source lang-javascript"><code>options passed are: timeOut, name, style
-</code></pre>
-<h2>Splash</h2>
-<p><strong>Extends View</strong></p>
-<p>Splash Screen View</p>
-<h3>Parameters</h3>
-<ul>
-<li><code>options</code>  Options to pass</li>
-</ul>
-<h3>Examples</h3>
-<pre class="prettyprint source lang-javascript"><code>options passed are: title, subTitle, subSubTitle, name, style, and figureStyle
-</code></pre></article>
+<p>A Component Manager</p></article>
 		</section>
 			</div>
 				<div class="col-md-3 side-content">
@@ -525,7 +366,7 @@ Supported options are:<br/></p>
 	</div>
 	<footer>
 				<div class="footer-option"><a href='http://www.augmentedjs.com'>Augmented.js Homepage</a></div>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.2</a> on Sun Jun 23rd 2019 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sun Sep 29th 2019 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

@@ -1,4 +1,4 @@
-// Separated to it's own module, imported for backward compatability
+// Separated to it's own module, imported for backward compatibility
 import { HamburgerMenu, Menu, NavigationMenu, NotificationCenter, Toolbar, Iconbar } from "presentation-navigation";
 import { DialogView, ConfirmationDialogView, AlertDialogView, Notification, Splash, ErrorDialogView, MessageDialogView } from "presentation-dialogs";
 
