@@ -5,7 +5,7 @@ const dom = (new JSDOM('<!doctype html><html><body><article><section id="header"
 global.document = dom.document;
 global.window = dom.window;
 global.navigator = {
-  userAgent: 'node.js'
+  userAgent: "node.js"
 };
 
 global.Components = require("../dist/presentation-components.js");

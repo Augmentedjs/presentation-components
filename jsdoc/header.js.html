@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>article/article.js</title>
+		<title>header.js</title>
 		<link rel="icon" type="image/png" href="favicon.png"/>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -67,11 +67,11 @@
 								<li class="dropdown">
 									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
 									<ul class="dropdown-menu">
-											<li><a href="Presentation.Component.Article.html">Presentation.Component.Article</a></li>
-											<li><a href="Presentation.Component.Card.html">Presentation.Component.Card</a></li>
-											<li><a href="Presentation.Component.Footer.html">Presentation.Component.Footer</a></li>
-											<li><a href="Presentation.Component.Header.html">Presentation.Component.Header</a></li>
-											<li><a href="Presentation.Component.Header.html">Presentation.Component.Header</a></li>
+											<li><a href="Article.html">Article</a></li>
+											<li><a href="Card.html">Card</a></li>
+											<li><a href="Footer.html">Footer</a></li>
+											<li><a href="Header.html">Header</a></li>
+											<li><a href="Manager.html">Manager</a></li>
 									</ul>
 								</li>
 				</ul>
@@ -92,7 +92,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">source</span>
-				<h1><span class="name">article/article.js</span></h1>
+				<h1><span class="name">header.js</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -103,232 +103,66 @@
 			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { DecoratorView } from "presentation-decorator";
 import Dom from "presentation-dom";
 
-const DEFAULT_TAG = "article";
-
 /**
- * An article class for setting up a 'page'&lt;br/>
- * Supported options are:&lt;br/>
- * &lt;ul>
- * &lt;li>name - The name of the article view&lt;/li>
- * &lt;li>el - The mount point&lt;/li>
- * &lt;li>style - The style class&lt;/li>
- * &lt;li>header - The header markup&lt;/li>
- * &lt;li>headerEl - The header mount point&lt;/li>
- * &lt;li>footer - The footer markup&lt;/li>
- * &lt;li>footerEl - The footer mount point&lt;/li>
- * &lt;li>body - The body markup&lt;/li>
- * &lt;li>bodyEl - The body mount point (will generate a div)&lt;/li>
- * &lt;li>sections - array of sections to prefill (see addSection API for format)&lt;/li>
- * &lt;/ul>
- * @memberof Presentation.Component
- * @extends Presentation.DecoratorView
- * @param {object} options Options to pass to the constructor
- * @example
- * const article = new Presentation.Component.Article(
- *                 { "el": "#mount", "header": "html", "footerEl": "#foot" });
+ * A Header Component
+ * @extends DecoratorView
  */
-class Article extends DecoratorView {
+class Header extends DecoratorView {
   constructor(options) {
-    if (!options) {
-      options = {};
-    }
-    if (!options.name) {
-      options.name = DEFAULT_TAG;
-    }
-    // tag should be article
-    options.tagName = DEFAULT_TAG;
     super(options);
-    if (options &amp;&amp; options.header) {
-      this._header = options.header;
+    if (options &amp;&amp; options.title) {
+      this._title = options.title;
     } else {
-      this._header = "";
+      this._title = "";
     }
-    if (options &amp;&amp; options.headerEl) {
-      this._headerEl = options.headerEl;
+    if (options &amp;&amp; options.subTitle) {
+      this._subTitle = options.subTitle;
     } else {
-      this._headerEl = "";
-    }
-    if (options &amp;&amp; options.headerStyle) {
-      this._headerStyle = options.headerStyle;
-    } else {
-      this._headerStyle = "";
-    }
-    if (options &amp;&amp; options.body) {
-      this._body = options.body;
-    } else {
-      this._body = "";
-    }
-    if (options &amp;&amp; options.footer) {
-      this._footer = options.footer;
-    } else {
-      this._footer = "";
-    }
-    if (options &amp;&amp; options.footerEl) {
-      this._footerEl = options.footerEl;
-    } else {
-      this._footerEl = "";
-    }
-    if (options &amp;&amp; options.footerStyle) {
-      this._footerStyle = options.footerStyle;
-    } else {
-      this._footerStyle = "";
-    }
-    if (options &amp;&amp; options.sections) {
-      this._sections = options.sections;
-    } else {
-      this._sections = [];
+      this._subTitle = "";
     }
   };
-
   /**
-   * Header property
-   * @property {string} header
+   * @property {string} title A title property
    */
-  set header(header) {
-    this._header = header;
-  };
+   set title(title) {
+     this._title = title;
+   };
 
-  get header() {
-    return this._header;
-  };
-
+   get title() {
+     return this._title;
+   };
   /**
-   * Footer for the article
-   * @property {string} footer
+   * @property {string} subTitle A subTitle property
    */
-  set footer(footer) {
-    this._footer = footer;
-  };
+   set subTitle(subTitle) {
+     this._subTitle = subTitle;
+   };
 
-  get footer() {
-    return this._footer;
-  };
+   get subTitle() {
+     return this._subTitle;
+   };
+   /**
+    * Render the Header
+    * @returns {object} Returns the view context ('this')
+    */
+   render() {
+     Dom.setValue(this.el, `${this.template}${((this.title) ? "&lt;h1>" + this.title + "&lt;/h1>": "")}${((this.subTitle) ? "&lt;h2>" + this.subTitle + "&lt;/h2>": "")}`);
+     this.delegateEvents();
+     this.syncAllBoundElements();
+     return this;
+   };
 
-  /**
-   * The body content of the card (supports HTML)
-   * @property {string} body
-   */
-  set body(body) {
-    this._body = body;
-  };
-
-  get body() {
-    return this._body;
-  };
-
-  /**
-   * The section array
-   * @property {array} sections
-   */
-  set sections(sections) {
-    if (sections &amp;&amp; Array.isArray(sections)) {
-      this._sections = sections;
-    }
-  };
-
-  get sections() {
-    return this._sections;
-  };
-
-  /**
-   * @private
-   */
-  _formatSections() {
-    const l = this._sections.length;
-    let sections = "", i = 0;
-    for (i = 0; i &lt; l; i++) {
-      sections += this._formatSection(this._sections[i]);
-    }
-    return sections;
-  };
-
-  /**
-   * @private
-   */
-  _formatSection(section) {
-    let sect = "";
-    if (section &amp;&amp; ( section.body || section.id || section.class )) {
-      const cls = (section.class) ? ` class="${section.class}"` : "";
-      const id = (section.id) ? ` id="${section.id}"` : "";
-      const body = (section.body) ? section.body : "";
-      sect = `&lt;section${id}${cls}>${body}&lt;/section>`;
-    }
-    return sect;
-  };
-
-  /**
-   * Add a section object to the article
-   * @param {object} section a section object
-   * @example Section Object format:
-   * {
-   *   "id" "something",
-   *   "body" "html",
-   *   "class" "something"
-   * }
-   */
-  addSection(section) {
-    this._sections.push(section);
-  };
-
-  /**
-   * Clear the sections
-   */
-  clearSections() {
-    this._sections.splice(0, this._sections.length);
-  };
-
-  /**
-   * render - render the article
-   */
-  render() {
-    if (this.el) {
-      Dom.setValue(this.el, this._template());
-      this.delegateEvents();
-    }
-    return this;
-  };
-
-  /**
-   * template - sets content of the dialog, handled internally
-   * @private
-   */
-  _template() {
-    let header = "";
-    if (this._header) {
-      let hid = "", style = "";
-      if (this._headerEl) {
-        hid = ` id="${this._headerEl}"`;
-      }
-      if (this._headerStyle) {
-        style = ` class="${this._headerStyle}"`;
-      }
-
-      header = `&lt;header${hid}${style}>${this._header}&lt;/header>`;
-    }
-    let footer = "";
-    if (this._footer) {
-      let fid = "", style = "";
-      if (this._footerEl) {
-        fid = ` id="${this._footerEl}"`;
-      }
-      if (this._footerStyle) {
-        style = ` class="${this._footerStyle}"`;
-      }
-      footer = `&lt;footer${fid}${style}>${this._footer}&lt;/footer>`;
-    }
-    let body = "";
-    if (this._body) {
-      if (this._bodyEl) {
-        body = `&lt;div id="${this._bodyEl}">${this._body}&lt;/div>`;
-      } else {
-        body = `${this._body}`;
-      }
-    }
-    return `${header}${body}${this._formatSections()}${footer}`;
-  };
+   /**
+    * Remove the Header
+    * @returns {object} Returns the view context ('this')
+    */
+   remove() {
+     this.removeTemplate(this.el, true);
+     return super.remove();
+   };
 };
 
-export default Article;
+export default Header;
 </code></pre>
 		</section>
 			</div>
@@ -336,7 +170,7 @@ export default Article;
 	</div>
 	<footer>
 				<div class="footer-option"><a href='http://www.augmentedjs.com'>Augmented.js Homepage</a></div>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sun Sep 29th 2019 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.4</a> on Mon May 4th 2020 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

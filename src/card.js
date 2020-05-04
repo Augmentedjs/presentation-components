@@ -3,8 +3,7 @@ import Dom from "presentation-dom";
 
 /**
  * A card view - simple panel/dialog-like panel
- * @memberof Presentation.Component
- * @extends Presentation.DecoratorView
+ * @extends DecoratorView
  */
 class Card extends DecoratorView {
   constructor(options) {

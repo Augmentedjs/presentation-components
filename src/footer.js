@@ -3,8 +3,7 @@ import Dom from "presentation-dom";
 
 /**
  * A Footer Component
- * @memberof Presentation.Component
- * @extends Presentation.DecoratorView
+ * @extends DecoratorView
  */
 class Footer extends DecoratorView {
   constructor(options) {

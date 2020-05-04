@@ -18,8 +18,7 @@ const DEFAULT_TAG = "article";
  * <li>bodyEl - The body mount point (will generate a div)</li>
  * <li>sections - array of sections to prefill (see addSection API for format)</li>
  * </ul>
- * @memberof Presentation.Component
- * @extends Presentation.DecoratorView
+ * @extends DecoratorView
  * @param {object} options Options to pass to the constructor
  * @example
  * const article = new Presentation.Component.Article(

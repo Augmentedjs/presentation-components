@@ -53,11 +53,16 @@ Augmented.js Presentation Simple Components Module
         -   [Properties](#properties-5)
     -   [render](#render-3)
     -   [remove](#remove-1)
--   [Presentation.Component.Header](#presentationcomponentheader)
+-   [Manager](#manager)
+    -   [Parameters](#parameters-15)
+    -   [manageComponent](#managecomponent)
+        -   [Parameters](#parameters-16)
+    -   [unmanageComponent](#unmanagecomponent)
+        -   [Parameters](#parameters-17)
 
 ## Article
 
-**Extends Presentation.DecoratorView**
+**Extends DecoratorView**
 
 An article class for setting up a 'page'<br/>
 Supported options are:<br/>
@@ -163,7 +168,7 @@ render - render the article
 
 ## Card
 
-**Extends Presentation.DecoratorView**
+**Extends DecoratorView**
 
 A card view - simple panel/dialog-like panel
 
@@ -205,7 +210,7 @@ remove
 
 ## Footer
 
-**Extends Presentation.DecoratorView**
+**Extends DecoratorView**
 
 A Footer Component
 
@@ -227,7 +232,7 @@ render
 
 ## Header
 
-**Extends Presentation.DecoratorView**
+**Extends DecoratorView**
 
 A Header Component
 
@@ -267,8 +272,33 @@ Remove the Header
 
 Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Returns the view context ('this')
 
-## Presentation.Component.Header
+## Manager
 
-**Extends Presentation.Mediator**
+**Extends Mediator**
 
-A Component Manager
+A Component Manager or Mediator
+
+### Parameters
+
+-   `options`  
+
+**Meta**
+
+-   **deprecated**: Use Mediator
+
+
+### manageComponent
+
+Manages a component (colleague)
+
+#### Parameters
+
+-   `component` **View** A component or view to manage
+
+### unmanageComponent
+
+Unmanages a component (colleague)
+
+#### Parameters
+
+-   `component` **View** A component or view to manage

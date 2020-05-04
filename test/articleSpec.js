@@ -1,10 +1,10 @@
 
-describe('Given Augmented Presentation Article View', () => {
-	it('is defined', () => {
+describe("Given Augmented Presentation Article View", () => {
+	it("is defined", () => {
 		expect(Components.Article).to.not.be.undefined;
 	});
 
-	describe('Given an instance of Article', () => {
+	describe("Given an instance of Article", () => {
 		let view;
 
 		beforeEach(() => {
@@ -16,25 +16,25 @@ describe('Given Augmented Presentation Article View', () => {
 			view = null;
 		});
 
-		it('instance is an instance of Article', () => {
+		it("instance is an instance of Article", () => {
 			expect(view instanceof Components.Article).to.be.true;
 		});
 
-		it('has a body', () => {
+		it("has a body", () => {
 			expect(view.body).to.equal("hello");
 		});
 
-		it('has a header', () => {
+		it("has a header", () => {
 			view.header = "hello";
 			expect(view.header).to.equal("hello");
 		});
 
-		it('has a footer', () => {
+		it("has a footer", () => {
 			view.footer = "hello";
 			expect(view.footer).to.equal("hello");
 		});
 
-		it('can add a section', () => {
+		it("can add a section", () => {
 			view.addSection({});
 			expect(view.sections).to.not.equal([]);
 		});

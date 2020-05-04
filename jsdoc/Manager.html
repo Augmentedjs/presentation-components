@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>Card</title>
+		<title>Manager</title>
 		<link rel="icon" type="image/png" href="favicon.png"/>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -66,11 +66,11 @@
 								<li class="dropdown">
 									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
 									<ul class="dropdown-menu">
-											<li><a href="Presentation.Component.Article.html">Presentation.Component.Article</a></li>
-											<li><a href="Presentation.Component.Card.html">Presentation.Component.Card</a></li>
-											<li><a href="Presentation.Component.Footer.html">Presentation.Component.Footer</a></li>
-											<li><a href="Presentation.Component.Header.html">Presentation.Component.Header</a></li>
-											<li><a href="Presentation.Component.Header.html">Presentation.Component.Header</a></li>
+											<li><a href="Article.html">Article</a></li>
+											<li><a href="Card.html">Card</a></li>
+											<li><a href="Footer.html">Footer</a></li>
+											<li><a href="Header.html">Header</a></li>
+											<li><a href="Manager.html">Manager</a></li>
 									</ul>
 								</li>
 				</ul>
@@ -91,7 +91,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">class</span>
-				<h1><span class="name">Card</span></h1>
+				<h1><span class="name">Manager</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -100,16 +100,16 @@
 						<ol class="breadcrumb">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="list_class.html">Classes</a></li>
-							<li class="active">Card</li>
+							<li class="active">Manager</li>
 						</ol>
 					<section>
 							<dl class="symbol primary">
 								<dt class="symbol-title class">
-			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">Card</span><span class="signature-params">()</span></h2>
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">Manager</span><span class="signature-params">()</span></h2>
 </dt>
 <dd class="symbol-details class" style="max-height: 9999px;">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p>A card view - simple panel/dialog-like panel</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p>A Component Manager or Mediator</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 			
@@ -118,7 +118,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Augments</label>
 								<div class="col-sm-9">
-										<p class="form-control-static">Presentation.DecoratorView</p>
+										<p class="form-control-static">Mediator</p>
 								</div>
 							</div>
 			
@@ -129,6 +129,13 @@
 			
 			
 			
+							<!-- deprecated -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Deprecated</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">Use Mediator</p>
+								</div>
+							</div>
 			
 			
 			
@@ -137,7 +144,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="card_card.js.html">card/card.js</a>, <a href="card_card.js.html#line-10">line 10</a></p>
+									<p class="form-control-static"><a href="manager.js.html">manager.js</a>, <a href="manager.js.html#line-9">line 9</a></p>
 								</div>
 							</div>
 			
@@ -149,133 +156,37 @@
 </dd>
 							</dl>
 							<article class="secondary">
-									<h3>Members</h3>
-									<dl class="symbol">
-											<hr/>
-											<dt class="symbol-title member public">
-			<h4 id="style" class="member public"><span class="name">style</span><span class="signature-type"></span></h4>
-		</dt>
-<dd class="symbol-details member public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>style property - the style</p></div>
-			</div>			<div class="callout callout-info">
-				<h5>Properties</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>style</code></td>
-							<td></td>
-							<td class="last">
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="card_card.js.html">card/card.js</a>, <a href="card_card.js.html#line-40">line 40</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title member public">
-			<h4 id="body" class="member public"><span class="name">body</span><span class="signature-type"></span></h4>
-		</dt>
-<dd class="symbol-details member public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>The body content of the card (supports HTML)</p></div>
-			</div>			<div class="callout callout-info">
-				<h5>Properties</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>body</code></td>
-							<td></td>
-							<td class="last">
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="card_card.js.html">card/card.js</a>, <a href="card_card.js.html#line-60">line 60</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-									</dl>
 									<h3>Methods</h3>
 									<dl class="symbol">
 											<hr/>
 											<dt class="symbol-title function public">
-			<h4 id="render" class="function public"><span class="name">render</span><span class="signature-params">()</span></h4>
+			<h4 id="manageComponent" class="function public"><span class="name">manageComponent</span><span class="signature-params">( <span class="signature-param">component</span>&nbsp;)</span></h4>
 		</dt>
 <dd class="symbol-details function public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>render</p></div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Manages a component (colleague)</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>component</code></td>
+							<td><span class="param-type">View</span></td>
+							<td class="last">
+									<p>A component or view to manage</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 			
 			
@@ -295,7 +206,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="card_card.js.html">card/card.js</a>, <a href="card_card.js.html#line-71">line 71</a></p>
+									<p class="form-control-static"><a href="manager.js.html">manager.js</a>, <a href="manager.js.html#line-16">line 16</a></p>
 								</div>
 							</div>
 			
@@ -307,12 +218,33 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title function public">
-			<h4 id="remove" class="function public"><span class="name">remove</span><span class="signature-params">()</span></h4>
+			<h4 id="unmanageComponent" class="function public"><span class="name">unmanageComponent</span><span class="signature-params">( <span class="signature-param">component</span>&nbsp;)</span></h4>
 		</dt>
 <dd class="symbol-details function public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>remove</p></div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Unmanages a component (colleague)</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>component</code></td>
+							<td><span class="param-type">View</span></td>
+							<td class="last">
+									<p>A component or view to manage</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 			
 			
@@ -332,7 +264,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="card_card.js.html">card/card.js</a>, <a href="card_card.js.html#line-82">line 82</a></p>
+									<p class="form-control-static"><a href="manager.js.html">manager.js</a>, <a href="manager.js.html#line-23">line 23</a></p>
 								</div>
 							</div>
 			
@@ -353,7 +285,7 @@
 	</div>
 	<footer>
 				<div class="footer-option"><a href='http://www.augmentedjs.com'>Augmented.js Homepage</a></div>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sun Sep 29th 2019 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.4</a> on Mon May 4th 2020 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

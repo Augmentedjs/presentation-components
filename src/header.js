@@ -3,8 +3,7 @@ import Dom from "presentation-dom";
 
 /**
  * A Header Component
- * @memberof Presentation.Component
- * @extends Presentation.DecoratorView
+ * @extends DecoratorView
  */
 class Header extends DecoratorView {
   constructor(options) {
