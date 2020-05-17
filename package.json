@@ -1,6 +1,6 @@
 {
   "name": "presentation-components",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "The Augmented.js Next - Presentation Components Module.",
   "main": "dist/presentation-components.js",
   "scripts": {
@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "next-core-utilities": "^2.9.0",
-    "presentation-decorator": "^3.0.2",
+    "presentation-decorator": "^3.1.0",
     "presentation-dialogs": "^3.1.2",
     "presentation-dom": "^2.8.2",
     "presentation-mediator": "^3.0.0",
