@@ -59,6 +59,13 @@ Augmented.js Presentation Simple Components Module
         -   [Parameters](#parameters-16)
     -   [unmanageComponent](#unmanagecomponent)
         -   [Parameters](#parameters-17)
+-   [SelectBox](#selectbox)
+    -   [Parameters](#parameters-18)
+    -   [render](#render-4)
+    -   [remove](#remove-2)
+    -   [addOption](#addoption)
+        -   [Parameters](#parameters-19)
+        -   [Examples](#examples-2)
 
 ## Article
 
@@ -202,7 +209,7 @@ The body content of the card (supports HTML)
 
 ### render
 
-render
+render - render the card
 
 ### remove
 
@@ -228,7 +235,7 @@ The body content of the card (supports HTML)
 
 ### render
 
-render
+render - render the footer
 
 ## Header
 
@@ -262,9 +269,7 @@ A Header Component
 
 ### render
 
-Render the Header
-
-Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Returns the view context ('this')
+render - render the header
 
 ### remove
 
@@ -302,3 +307,39 @@ Unmanages a component (colleague)
 #### Parameters
 
 -   `component` **View** A component or view to manage
+
+## SelectBox
+
+**Extends DecoratorView**
+
+A SelectBox
+
+### Parameters
+
+-   `options`   (optional, default `{}`)
+
+### render
+
+Render the SelectBox
+
+Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Returns the view context ('this')
+
+### remove
+
+remove
+
+### addOption
+
+Adds an option to the select
+
+#### Parameters
+
+-   `label` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** label of the option
+-   `value` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** value of the option
+-   `selected` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** selected or not
+
+#### Examples
+
+```javascript
+addOption({"dog", 0, true});
+```

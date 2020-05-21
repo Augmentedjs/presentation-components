@@ -82,6 +82,7 @@
           "support"
         ],
         "Card.html#render": [
+          "card",
           "card#rend",
           "function",
           "render"
@@ -106,6 +107,7 @@
           "support"
         ],
         "Footer.html#render": [
+          "footer",
           "footer#rend",
           "function",
           "render"
@@ -136,6 +138,33 @@
           "header",
           "header#remov",
           "remov"
+        ],
+        "SelectBox.html": [
+          "class",
+          "selectbox"
+        ],
+        "SelectBox.html#render": [
+          "function",
+          "lt;async&gt",
+          "render",
+          "selectbox",
+          "selectbox#rend"
+        ],
+        "SelectBox.html#remove": [
+          "function",
+          "lt;async&gt",
+          "remov",
+          "selectbox#remov"
+        ],
+        "SelectBox.html#addOption": [
+          "add",
+          "addopt",
+          "function",
+          "label",
+          "option",
+          "select",
+          "selectbox#addopt",
+          "valu"
         ],
         "Manager.html": [
           "class",
@@ -240,7 +269,7 @@
           "render"
         ]
       },
-      "length": 27
+      "length": 31
     },
     "tokenStore": {
       "root": {
@@ -286,9 +315,27 @@
             "docs": {},
             "d": {
               "docs": {
+                "SelectBox.html#addOption": {
+                  "ref": "SelectBox.html#addOption",
+                  "tf": 16.666666666666664
+                },
                 "Article.html#addSection": {
                   "ref": "Article.html#addSection",
                   "tf": 12.5
+                }
+              },
+              "o": {
+                "docs": {},
+                "p": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "SelectBox.html#addOption": {
+                        "ref": "SelectBox.html#addOption",
+                        "tf": 675
+                      }
+                    }
+                  }
                 }
               },
               "s": {
@@ -809,15 +856,19 @@
                     "docs": {
                       "Card.html#render": {
                         "ref": "Card.html#render",
-                        "tf": 800
+                        "tf": 783.3333333333334
                       },
                       "Footer.html#render": {
                         "ref": "Footer.html#render",
-                        "tf": 800
+                        "tf": 783.3333333333334
                       },
                       "Header.html#render": {
                         "ref": "Header.html#render",
-                        "tf": 775
+                        "tf": 783.3333333333334
+                      },
+                      "SelectBox.html#render": {
+                        "ref": "SelectBox.html#render",
+                        "tf": 725
                       },
                       "Article.html#render": {
                         "ref": "Article.html#render",
@@ -841,6 +892,10 @@
                     "Header.html#remove": {
                       "ref": "Header.html#remove",
                       "tf": 775
+                    },
+                    "SelectBox.html#remove": {
+                      "ref": "SelectBox.html#remove",
+                      "tf": 750
                     }
                   }
                 }
@@ -953,6 +1008,98 @@
           },
           "e": {
             "docs": {},
+            "l": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "c": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "SelectBox.html#addOption": {
+                        "ref": "SelectBox.html#addOption",
+                        "tf": 41.666666666666664
+                      }
+                    },
+                    "b": {
+                      "docs": {},
+                      "o": {
+                        "docs": {},
+                        "x": {
+                          "docs": {
+                            "SelectBox.html": {
+                              "ref": "SelectBox.html",
+                              "tf": 1950
+                            },
+                            "SelectBox.html#render": {
+                              "ref": "SelectBox.html#render",
+                              "tf": 25
+                            }
+                          },
+                          "#": {
+                            "docs": {},
+                            "r": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "n": {
+                                  "docs": {},
+                                  "d": {
+                                    "docs": {
+                                      "SelectBox.html#render": {
+                                        "ref": "SelectBox.html#render",
+                                        "tf": 1150
+                                      }
+                                    }
+                                  }
+                                },
+                                "m": {
+                                  "docs": {},
+                                  "o": {
+                                    "docs": {},
+                                    "v": {
+                                      "docs": {
+                                        "SelectBox.html#remove": {
+                                          "ref": "SelectBox.html#remove",
+                                          "tf": 1150
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "a": {
+                              "docs": {},
+                              "d": {
+                                "docs": {},
+                                "d": {
+                                  "docs": {},
+                                  "o": {
+                                    "docs": {},
+                                    "p": {
+                                      "docs": {},
+                                      "t": {
+                                        "docs": {
+                                          "SelectBox.html#addOption": {
+                                            "ref": "SelectBox.html#addOption",
+                                            "tf": 1150
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "c": {
               "docs": {},
               "t": {
@@ -1069,6 +1216,10 @@
                       "ref": "Header.html",
                       "tf": 110
                     },
+                    "SelectBox.html": {
+                      "ref": "SelectBox.html",
+                      "tf": 110
+                    },
                     "Manager.html": {
                       "ref": "Manager.html",
                       "tf": 110
@@ -1126,6 +1277,10 @@
                   "Card.html#body": {
                     "ref": "Card.html#body",
                     "tf": 10
+                  },
+                  "Card.html#render": {
+                    "ref": "Card.html#render",
+                    "tf": 16.666666666666664
                   },
                   "Footer.html#body": {
                     "ref": "Footer.html#body",
@@ -1337,6 +1492,62 @@
                 }
               }
             }
+          },
+          "t": {
+            "docs": {},
+            ";": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "y": {
+                    "docs": {},
+                    "n": {
+                      "docs": {},
+                      "c": {
+                        "docs": {},
+                        "&": {
+                          "docs": {},
+                          "g": {
+                            "docs": {},
+                            "t": {
+                              "docs": {
+                                "SelectBox.html#render": {
+                                  "ref": "SelectBox.html#render",
+                                  "tf": 50
+                                },
+                                "SelectBox.html#remove": {
+                                  "ref": "SelectBox.html#remove",
+                                  "tf": 50
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "b": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "SelectBox.html#addOption": {
+                      "ref": "SelectBox.html#addOption",
+                      "tf": 25
+                    }
+                  }
+                }
+              }
+            }
           }
         },
         "v": {
@@ -1354,6 +1565,20 @@
                   "Article.html": {
                     "ref": "Article.html",
                     "tf": 1.0416666666666665
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "l": {
+              "docs": {},
+              "u": {
+                "docs": {
+                  "SelectBox.html#addOption": {
+                    "ref": "SelectBox.html#addOption",
+                    "tf": 25
                   }
                 }
               }
@@ -1690,7 +1915,7 @@
                       },
                       "Header.html#render": {
                         "ref": "Header.html#render",
-                        "tf": 25
+                        "tf": 16.666666666666664
                       },
                       "Header.html#remove": {
                         "ref": "Header.html#remove",
@@ -1835,6 +2060,18 @@
                             "ref": "Header.html#remove",
                             "tf": 110
                           },
+                          "SelectBox.html#render": {
+                            "ref": "SelectBox.html#render",
+                            "tf": 110
+                          },
+                          "SelectBox.html#remove": {
+                            "ref": "SelectBox.html#remove",
+                            "tf": 110
+                          },
+                          "SelectBox.html#addOption": {
+                            "ref": "SelectBox.html#addOption",
+                            "tf": 110
+                          },
                           "Manager.html#manageComponent": {
                             "ref": "Manager.html#manageComponent",
                             "tf": 110
@@ -1876,6 +2113,10 @@
                       "Footer.html": {
                         "ref": "Footer.html",
                         "tf": 1925
+                      },
+                      "Footer.html#render": {
+                        "ref": "Footer.html#render",
+                        "tf": 16.666666666666664
                       },
                       "Article.html": {
                         "ref": "Article.html",
@@ -1974,6 +2215,53 @@
             }
           }
         },
+        "o": {
+          "docs": {},
+          "p": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "SelectBox.html#addOption": {
+                        "ref": "SelectBox.html#addOption",
+                        "tf": 16.666666666666664
+                      },
+                      "Article.html": {
+                        "ref": "Article.html",
+                        "tf": 1.0416666666666665
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "b": {
+            "docs": {},
+            "j": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "c": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "Article.html#addSection": {
+                        "ref": "Article.html#addSection",
+                        "tf": 12.5
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
         "u": {
           "docs": {},
           "n": {
@@ -2044,55 +2332,13 @@
               }
             }
           }
-        },
-        "o": {
-          "docs": {},
-          "p": {
-            "docs": {},
-            "t": {
-              "docs": {},
-              "i": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "n": {
-                    "docs": {
-                      "Article.html": {
-                        "ref": "Article.html",
-                        "tf": 1.0416666666666665
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "b": {
-            "docs": {},
-            "j": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "c": {
-                  "docs": {},
-                  "t": {
-                    "docs": {
-                      "Article.html#addSection": {
-                        "ref": "Article.html#addSection",
-                        "tf": 12.5
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
         }
       },
-      "length": 146
+      "length": 167
     },
     "corpusTokens": [
       "add",
+      "addopt",
       "addsect",
       "api",
       "array",
@@ -2138,8 +2384,10 @@
       "headerel",
       "html",
       "index",
+      "label",
       "list",
       "list:class",
+      "lt;async&gt",
       "manag",
       "managecompon",
       "manager#managecompon",
@@ -2164,6 +2412,11 @@
       "render",
       "section",
       "see",
+      "select",
+      "selectbox",
+      "selectbox#addopt",
+      "selectbox#remov",
+      "selectbox#rend",
       "set",
       "simpl",
       "simpli",
@@ -2174,6 +2427,7 @@
       "unmanag",
       "unmanagecompon",
       "up",
+      "valu",
       "view"
     ],
     "pipeline": [
@@ -2255,7 +2509,7 @@
       "name": "render",
       "tags": "Card#render render",
       "summary": "",
-      "description": "render"
+      "description": "render - render the card"
     },
     "Card.html#remove": {
       "id": "Card.html#remove",
@@ -2296,7 +2550,7 @@
       "name": "render",
       "tags": "Footer#render render",
       "summary": "",
-      "description": "render"
+      "description": "render - render the footer"
     },
     "Header.html": {
       "id": "Header.html",
@@ -2337,7 +2591,7 @@
       "name": "render",
       "tags": "Header#render render",
       "summary": "",
-      "description": "Render the Header"
+      "description": "render - render the header"
     },
     "Header.html#remove": {
       "id": "Header.html#remove",
@@ -2348,6 +2602,47 @@
       "tags": "Header#remove remove",
       "summary": "",
       "description": "Remove the Header"
+    },
+    "SelectBox.html": {
+      "id": "SelectBox.html",
+      "kind": "class",
+      "title": "SelectBox",
+      "longname": "SelectBox",
+      "name": "SelectBox",
+      "tags": "SelectBox",
+      "summary": "",
+      "description": "A SelectBox",
+      "body": ""
+    },
+    "SelectBox.html#render": {
+      "id": "SelectBox.html#render",
+      "kind": "function",
+      "title": "&lt;async&gt; render()",
+      "longname": "SelectBox#render",
+      "name": "render",
+      "tags": "SelectBox#render render",
+      "summary": "",
+      "description": "Render the SelectBox"
+    },
+    "SelectBox.html#remove": {
+      "id": "SelectBox.html#remove",
+      "kind": "function",
+      "title": "&lt;async&gt; remove()",
+      "longname": "SelectBox#remove",
+      "name": "remove",
+      "tags": "SelectBox#remove remove",
+      "summary": "",
+      "description": "remove"
+    },
+    "SelectBox.html#addOption": {
+      "id": "SelectBox.html#addOption",
+      "kind": "function",
+      "title": "addOption( label, value, selected )",
+      "longname": "SelectBox#addOption",
+      "name": "addOption",
+      "tags": "SelectBox#addOption addOption",
+      "summary": "",
+      "description": "Adds an option to the select"
     },
     "Manager.html": {
       "id": "Manager.html",

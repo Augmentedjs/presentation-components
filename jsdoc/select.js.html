@@ -1,9 +1,10 @@
+<!-- start:source.tmpl.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>Classes</title>
+		<title>select.js</title>
 		<link rel="icon" type="image/png" href="favicon.png"/>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -42,7 +43,7 @@
 			</style>
 		<script type="text/javascript">
 			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"ddd MMM Do YYYY","systemName":"Augmented.js Next Presentation","systemSummary":"Augmented.js Next Presentation - Simply Development.","systemLogo":"img/jensen-silo-circle-small.png","systemColor":"#607D8B","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"<a href='http://www.augmentedjs.com'>Augmented.js Homepage</a>","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":true,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":false,"sort":"linenum, longname, version, since","search":true,"favicon":"favicon.png","stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"logoFile":"public/images/jensen-silo-circle-small.png","navType":"vertical","protocol":"html://"};
-			window.DOCLET_TOC_ENABLED = true;
+			window.DOCLET_TOC_ENABLED = false;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
 </head>
@@ -91,76 +92,121 @@
 	</header>
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
-				<span class="kind">list</span>
-				<h1><span class="name">Classes</span></h1>
-				<div class="summary"><p>All documented classes.</p></div>			</div>
+				<span class="kind">source</span>
+				<h1><span class="name">select.js</span></h1>
+			</div>
 		</div>
 	<div class="container content">
 		<div class="row">
-			<div class="col-md-9 main-content">
-						<ol class="breadcrumb">
-							<li><a href="index.html">Home</a></li>
-							<li class="active">Classes</li>
-						</ol>
-					<section>
-		<h2><span class="name">Classes</span></h2>
-		<article class="secondary">
-				<dl class="symbol">
-						
-						<dt class="symbol-title class public">
-			<h4 id="Article" class="class public"><a href="Article.html"><span class="signature-new">new&nbsp;</span><span class="name">Article</span><span class="signature-params">( <span class="signature-param">options</span>&nbsp;)</span></a></h4>
-</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-						<hr/>
-						<dt class="symbol-title class public">
-			<h4 id="Card" class="class public"><a href="Card.html"><span class="signature-new">new&nbsp;</span><span class="name">Card</span><span class="signature-params">()</span></a></h4>
-</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-						<hr/>
-						<dt class="symbol-title class public">
-			<h4 id="Footer" class="class public"><a href="Footer.html"><span class="signature-new">new&nbsp;</span><span class="name">Footer</span><span class="signature-params">()</span></a></h4>
-</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-						<hr/>
-						<dt class="symbol-title class public">
-			<h4 id="Header" class="class public"><a href="Header.html"><span class="signature-new">new&nbsp;</span><span class="name">Header</span><span class="signature-params">()</span></a></h4>
-</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-						<hr/>
-						<dt class="symbol-title class public">
-			<h4 id="Manager" class="class public"><a href="Manager.html"><span class="signature-new">new&nbsp;</span><span class="name">Manager</span><span class="signature-params">()</span></a></h4>
-</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-						<hr/>
-						<dt class="symbol-title class public">
-			<h4 id="SelectBox" class="class public"><a href="SelectBox.html"><span class="signature-new">new&nbsp;</span><span class="name">SelectBox</span><span class="signature-params">()</span></a></h4>
-</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-				</dl>
-		</article>
-					</section>
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { DecoratorView } from "presentation-decorator";
+
+/**
+ * A SelectBox
+ * @extends DecoratorView
+ */
+class SelectBox extends DecoratorView {
+  constructor(options = {}) {
+    super(options);
+    if (options.options &amp;&amp; Array.isArray(options.options)) {
+      this._options = options.options;
+    } else {
+      this._options = [];
+    }
+
+    if (options.large) {
+      this._large = true;
+    } else {
+      this._large = false;
+    }
+
+    if (options.label) {
+      this.label = options.label;
+    }
+  };
+
+  set large(large) {
+    this._large = large;
+  };
+
+  get large() {
+    return this._large;
+  };
+
+  /**
+   * Render the SelectBox
+   * @returns {object} Returns the view context ('this')
+   */
+  async render() {
+    await super.render();
+    if (this.el) {
+      const el = document.querySelector(this.el);
+
+      if (el) {
+        el.classList.add("select");
+        if (this._large) {
+          el.classList.add("large");
+        }
+        const select = document.createElement("select");
+
+        select.dataset[this.name] = `select`;
+        select.name = this.name;
+        select.id = `select_${this.name}_${el.id}`;
+
+        let i = 0;
+        const l = this._options.length;
+        for(i; i &lt; l; i++) {
+          const option = document.createElement("option");
+          option.value = this._options[i].value;
+          if (this._options[i].selected) {
+            option.selected = true;
+          }
+          const text = document.createTextNode(this._options[i].label);
+          option.appendChild(text);
+          select.appendChild(option);
+        }
+
+        el.appendChild(select);
+        const label = document.createElement("label");
+        const text = document.createTextNode(this.label);
+        label.appendChild(text);
+        label.htmlFor = `select_${this.name}_${el.id}`;
+        el.appendChild(label);
+      }
+    }
+    return this;
+  };
+
+  /**
+   * remove
+   */
+  async remove() {
+    await this.removeTemplate(this.el, true);
+    return super.remove();
+  };
+
+  /**
+   * Adds an option to the select
+   * @param {string} label label of the option
+   * @param {string} value value of the option
+   * @param {boolean} selected selected or not
+   * @example addOption({"dog", 0, true});
+   */
+  addOption(label, value, selected) {
+    this._options.push({
+      "label": label,
+      "value": value,
+      "selected": (selected) ? selected : false
+    });
+  };
+};
+
+export default SelectBox;
+</code></pre>
+		</section>
 			</div>
-				<div class="col-md-3 side-content">
-					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
-				</div>
 		</div>
 	</div>
 	<footer>
@@ -192,3 +238,4 @@
 	
 </body>
 </html>
+<!-- end:source.tmpl.hbs -->
