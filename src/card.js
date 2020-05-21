@@ -1,5 +1,4 @@
 import { DecoratorView } from "presentation-decorator";
-import Dom from "presentation-dom";
 
 /**
  * A card view - simple panel/dialog-like panel
@@ -65,11 +64,14 @@ class Card extends DecoratorView {
   };
 
   /**
-   * render
+   * render - render the card
    */
   render() {
     if (this.el) {
-      Dom.setValue(this.el, this._template());
+      const el = document.querySelector(this.el);
+      if (el) {
+        el.innerHTML = this._template();
+      }
       this.delegateEvents();
     }
     return this;

@@ -1,5 +1,4 @@
 import { DecoratorView } from "presentation-decorator";
-import Dom from "presentation-dom";
 
 /**
  * A Header Component
@@ -39,14 +38,19 @@ class Header extends DecoratorView {
    get subTitle() {
      return this._subTitle;
    };
+
    /**
-    * Render the Header
-    * @returns {object} Returns the view context ('this')
+    * render - render the header
     */
    render() {
-     Dom.setValue(this.el, `${this.template}${((this.title) ? "<h1>" + this.title + "</h1>": "")}${((this.subTitle) ? "<h2>" + this.subTitle + "</h2>": "")}`);
-     this.delegateEvents();
-     this.syncAllBoundElements();
+     if (this.el) {
+       const el = document.querySelector(this.el);
+       if (el) {
+         el.innerHTML = `${this.template}${((this.title) ? "<h1>" + this.title + "</h1>": "")}${((this.subTitle) ? "<h2>" + this.subTitle + "</h2>": "")}`;
+       }
+       this.delegateEvents();
+       this.syncAllBoundElements();
+     }
      return this;
    };
 

@@ -1,5 +1,4 @@
 import { DecoratorView } from "presentation-decorator";
-import Dom from "presentation-dom";
 
 const DEFAULT_TAG = "article";
 
@@ -179,7 +178,10 @@ class Article extends DecoratorView {
    */
   render() {
     if (this.el) {
-      Dom.setValue(this.el, this._template());
+      const el = document.querySelector(this.el);
+      if (el) {
+        el.innerHTML = this._template();
+      }
       this.delegateEvents();
     }
     return this;

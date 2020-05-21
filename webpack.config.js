@@ -1,16 +1,16 @@
-const path = require('path');
-const webpack = require('webpack');
+const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
   context: __dirname,
   target: "web",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'presentation-components.js',
-    publicPath: '/dist/',
+    path: path.resolve(__dirname, "dist"),
+    filename: "presentation-components.js",
+    publicPath: "/dist/",
     library: "presentation-components",
-    globalObject: 'this',
+    globalObject: "this",
     libraryTarget: "umd",
     umdNamedDefine: true
   },
@@ -26,53 +26,17 @@ module.exports = {
     ]
   },
   externals: {
-    'next-core-utilities': {
-      commonjs: 'next-core-utilities',
-      commonjs2: 'next-core-utilities',
-      amd: 'next-core-utilities',
-      root: 'next-core-utilities'
+    "presentation-decorator": {
+      commonjs: "presentation-decorator",
+      commonjs2: "presentation-decorator",
+      amd: "presentation-decorator",
+      root: "presentation-decorator"
     },
-    'presentation-models': {
-      commonjs: 'presentation-models',
-      commonjs2: 'presentation-models',
-      amd: 'presentation-models',
-      root: 'presentation-models'
-    },
-    'presentation-decorator': {
-      commonjs: 'presentation-decorator',
-      commonjs2: 'presentation-decorator',
-      amd: 'presentation-decorator',
-      root: 'presentation-decorator'
-    },
-    'presentation-mediator': {
-      commonjs: 'presentation-mediator',
-      commonjs2: 'presentation-mediator',
-      amd: 'presentation-mediator',
-      root: 'presentation-mediator'
-    },
-    'presentation-view': {
-      commonjs: 'presentation-view',
-      commonjs2: 'presentation-view',
-      amd: 'presentation-view',
-      root: 'presentation-view'
-    },
-    'presentation-dom': {
-      commonjs: 'presentation-dom',
-      commonjs2: 'presentation-dom',
-      amd: 'presentation-dom',
-      root: 'presentation-dom'
-    },
-    'presentation-navigation': {
-      commonjs: 'presentation-navigation',
-      commonjs2: 'presentation-navigation',
-      amd: 'presentation-navigation',
-      root: 'presentation-navigation'
-    },
-    'presentation-dialogs': {
-      commonjs: 'presentation-dialogs',
-      commonjs2: 'presentation-dialogs',
-      amd: 'presentation-dialogs',
-      root: 'presentation-dialogs'
+    "presentation-mediator": {
+      commonjs: "presentation-mediator",
+      commonjs2: "presentation-mediator",
+      amd: "presentation-mediator",
+      root: "presentation-mediator"
     }
   },
   stats: "errors-only",

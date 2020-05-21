@@ -1,5 +1,4 @@
 import { DecoratorView } from "presentation-decorator";
-import Dom from "presentation-dom";
 
 /**
  * A Footer Component
@@ -35,11 +34,14 @@ class Footer extends DecoratorView {
   };
 
   /**
-   * render
+   * render - render the footer
    */
   render() {
     if (this.el) {
-      Dom.setValue(this.el, this._template());
+      const el = document.querySelector(this.el);
+      if (el) {
+        el.innerHTML = this._template();
+      }
       this.delegateEvents();
       this.syncAllBoundElements();
     }
