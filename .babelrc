@@ -4,7 +4,8 @@
       "targets": {
         "browsers": ["firefox >= 67", "chrome >= 74"]
       },
-      "debug": true
+      "debug": true,
+      "modules": false
     }]
   ],
   "plugins": [
