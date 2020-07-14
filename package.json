@@ -1,6 +1,6 @@
 {
   "name": "presentation-components",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "description": "The Augmented.js Next - Presentation Components Module.",
   "main": "dist/presentation-components.js",
   "scripts": {
@@ -36,7 +36,7 @@
     "documentation": "^13.0.2",
     "foodoc": "0.0.9",
     "jsdoc": "^3.6.4",
-    "jsdom": "^16.2.2",
+    "jsdom": "^16.3.0",
     "mocha": "^8.0.1",
     "mocha-jsdom": "^2.0.0",
     "rollup": "^2.21.0",
@@ -47,7 +47,7 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "presentation-decorator": "^3.1.4",
+    "presentation-decorator": "^3.1.5",
     "presentation-mediator": "^3.0.0"
   },
   "bugs": {
