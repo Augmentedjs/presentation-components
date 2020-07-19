@@ -47,8 +47,8 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "presentation-decorator": "^3.2.1",
-    "presentation-mediator": "^3.0.0"
+    "presentation-decorator": "^3.2.2",
+    "presentation-mediator": "^3.0.1"
   },
   "bugs": {
     "url": "https://github.com/Augmentedjs/presentation-components/issues"
